@@ -82,15 +82,31 @@ export const Card = styled.section`
   }
   }
 
+  &.enterprise{
+    button{
+      margin-top: 3.2rem;
+    }
+
+    div:first-child{
+      strong{
+        font-size: 3.2rem;
+      }
+    }
+
+    ul{
+      margin-top: 3.2rem;
+      padding-top: 3.2rem;
+    }
+  }
+
   :hover{
     border-color: var(--color-purple-100);
+    transform: scale(1.05);
   }
 `
 
 export const Inner = styled.div`
   padding: 2.4rem;
-
- 
 
   p{
     color: var(--color-purple-200);

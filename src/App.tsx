@@ -67,7 +67,6 @@ export function App() {
               <p>Para sua empresa</p>
               <TitleWrapper>
                 <strong>Enterprise</strong>
-                
               </TitleWrapper>
               <Button>Fale com a gente</Button>
 
