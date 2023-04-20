@@ -4,7 +4,7 @@ import { Button, Card, CardContainer, Inner, TitleWrapper } from "./style/home";
 export function App() {
   return (
       <CardContainer>
-          <Card className="essentials">
+          <Card className="essentials" delay="0.01s">
             <Inner>
               <p>para você começar</p>
               <TitleWrapper>
@@ -28,7 +28,7 @@ export function App() {
             </Inner>
           </Card>
 
-          <Card className="ultimate best">
+          <Card className="ultimate best" delay="0.21s">
             <Inner>
               <p>Para você decolar</p>
               <TitleWrapper>
@@ -62,7 +62,7 @@ export function App() {
             </Inner>
           </Card>
 
-          <Card className="enterprise">
+          <Card className="enterprise" delay="0.41s">
             <Inner>
               <p>Para sua empresa</p>
               <TitleWrapper>

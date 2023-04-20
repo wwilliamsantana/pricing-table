@@ -33,6 +33,15 @@ export const GlobalStyles = createGlobalStyle`
 body{
 	font-size: 1.6rem;
 	background-color: var(--color-gray-50);
+	
+}
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
 }
 
 

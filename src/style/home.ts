@@ -9,15 +9,28 @@ export const CardContainer = styled.div`
   gap: 2.4rem;
 
   padding: 8rem 2rem;
+
+
+
+  @media(min-width: 1024px){
+    flex-direction: row;
+    max-width: 1536px;
+    margin: auto;
+  }
+
+
 `
 
-export const Card = styled.section`
+export const Card = styled.section<{delay: string}>`
   width: 320px;
   margin: auto;
   background-color: var(--color-white);
   border: 1px solid var(--color-gray-200);
   border-radius: 1rem;
   transition: border 0.4s;
+
+  transition: transform 0.3s;
+  animation: appear 0.4s backwards ${props => props.delay};
 
 
   &.best{
@@ -65,6 +78,10 @@ export const Card = styled.section`
       background-color: var(--color-purple-100);
       border-color: var(--color-purple-200);
       color: var(--color-white);
+
+      :hover{
+        background-color: var(--color-purple-200);
+      }
     }
 
     li{
@@ -103,6 +120,8 @@ export const Card = styled.section`
     border-color: var(--color-purple-100);
     transform: scale(1.05);
   }
+
+ 
 `
 
 export const Inner = styled.div`
