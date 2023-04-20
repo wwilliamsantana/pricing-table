@@ -5,9 +5,9 @@ export const CardContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  flex-direction: column;
+  gap: 2.4rem;
 
-  background-color: var(--color-gray-50);
   padding: 8rem 2rem;
 `
 
@@ -19,6 +19,69 @@ export const Card = styled.section`
   border-radius: 1rem;
   transition: border 0.4s;
 
+
+  &.best{
+    margin-top: 1.6rem;
+    position: relative;
+    
+    ::before{
+      content: "Mais vantajoso" ;
+      background-color: var(--color-orange);
+      color: var(--color-gray-900);
+      padding: 0.8rem 1.6rem;
+      border-radius: 0.6rem;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      top: -17px;
+    }
+  }
+
+  &.ultimate{
+    background-color: var(--color-gray-900);
+
+   
+    div:first-child p:first-child{
+      color: var(--color-purple-100);
+    }
+
+
+    div:first-child {
+    div{
+        strong, span{
+        color: var(--color-gray-50);
+      }
+    }
+
+    button{
+      background-color: var(--color-purple-100);
+      border-color: var(--color-purple-200);
+      color: var(--color-white);
+    }
+
+    li{
+      svg:first-child{
+        color: var(--color-green-100);
+      }
+      span{
+        color: var(--color-gray-300);
+      }
+      svg:last-child{
+        color: var(--color-gray-500);
+      }
+    }
+
+  }
+  }
+
   :hover{
     border-color: var(--color-purple-100);
   }
@@ -26,6 +89,7 @@ export const Card = styled.section`
 
 export const Inner = styled.div`
   padding: 2.4rem;
+
  
 
   p{
@@ -54,6 +118,10 @@ export const Inner = styled.div`
 
       svg:first-of-type{
         color: var(--color-green-200);
+      }
+
+      svg:last-child{
+        color: var(--color-gray-900);
       }
 
       span{
