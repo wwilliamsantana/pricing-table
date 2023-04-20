@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Check, Info } from "@phosphor-icons/react";
+import { Button, Card, CardContainer, Inner, TitleWrapper } from "./style/home";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export function App() {
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+      <CardContainer>
+          <Card>
+            <Inner>
+              <p>para você começar</p>
+              <TitleWrapper>
+                <strong>Essentials</strong>
+                <span>R$<strong>19,97/mês</strong></span>
+              </TitleWrapper>
+              <Button>Assinar agora</Button>
+
+              <ul>
+                <li>
+                  <Check size={20}/>
+                  <span>Até 3 usuários</span>
+                  <Info size={16}/>
+                </li>
+                <li>
+                  <Check size={20}/>
+                  <span>Até 3 usuários</span>
+                  <Info size={16}/>
+                </li>
+              </ul>
+            </Inner>
+          </Card>
+      </CardContainer>
+
   )
 }
 
-export default App
+
