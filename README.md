@@ -1,7 +1,7 @@
 # Tabela de preços
 
 ## :computer: Sobre
-Projeto foi idealizado a partir de um desafio proposto pela #Rocketseat, onde foi disponibilizado **APENAS** o layout pelo [FIGMA](https://www.figma.com/community/file/1227809985897425342/%23boracodar---Desafio-15)
+Projeto foi idealizado a partir de um desafio proposto pela #Rocketseat, onde foi disponibilizado **APENAS** o layout do [FIGMA](https://www.figma.com/community/file/1227809985897425342/%23boracodar---Desafio-15)
 
 ### Ideia:
 Desenvolver um layout que corresponda exatamente ao design apresentado no Figma.
